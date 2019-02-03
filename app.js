@@ -45,7 +45,7 @@ json_array.forEach(function (obj) {
         console.log(body); // prints the id of the document sent to couchdb
     });
 
-    const wonderland = nano.use('wonderland');
+    const wonderland = nano.use('wonderland'); // this changes to the second database
 
     wonderland.insert({
         Latitude: obj.lat,
